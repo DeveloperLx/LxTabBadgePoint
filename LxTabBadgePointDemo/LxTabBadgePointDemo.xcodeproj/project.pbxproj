@@ -13,7 +13,7 @@
 		B634BD001C032656004B05D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B634BCFE1C032656004B05D8 /* Main.storyboard */; };
 		B634BD021C032656004B05D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B634BD011C032656004B05D8 /* Assets.xcassets */; };
 		B634BD051C032656004B05D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B634BD031C032656004B05D8 /* LaunchScreen.storyboard */; };
-		B6C491FE1C04277E00650119 /* UIViewController+LxTabBadgePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C491FD1C04277E00650119 /* UIViewController+LxTabBadgePoint.m */; };
+		B6350E531C0606450052E507 /* UIViewController+LxTabBadgePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B6350E521C0606450052E507 /* UIViewController+LxTabBadgePoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		B634BD011C032656004B05D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B634BD041C032656004B05D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B634BD061C032656004B05D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6C491FC1C04277E00650119 /* UIViewController+LxTabBadgePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LxTabBadgePoint.h"; sourceTree = "<group>"; };
-		B6C491FD1C04277E00650119 /* UIViewController+LxTabBadgePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LxTabBadgePoint.m"; sourceTree = "<group>"; };
+		B6350E511C0606450052E507 /* UIViewController+LxTabBadgePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+LxTabBadgePoint.h"; path = "../../LxTabBadgePoint/UIViewController+LxTabBadgePoint.h"; sourceTree = "<group>"; };
+		B6350E521C0606450052E507 /* UIViewController+LxTabBadgePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+LxTabBadgePoint.m"; path = "../../LxTabBadgePoint/UIViewController+LxTabBadgePoint.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 		B634BD0F1C0326AC004B05D8 /* LxTabBadgePoint */ = {
 			isa = PBXGroup;
 			children = (
-				B6C491FC1C04277E00650119 /* UIViewController+LxTabBadgePoint.h */,
-				B6C491FD1C04277E00650119 /* UIViewController+LxTabBadgePoint.m */,
+				B6350E511C0606450052E507 /* UIViewController+LxTabBadgePoint.h */,
+				B6350E521C0606450052E507 /* UIViewController+LxTabBadgePoint.m */,
 			);
 			name = LxTabBadgePoint;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B634BCFD1C032656004B05D8 /* ViewController.m in Sources */,
-				B6C491FE1C04277E00650119 /* UIViewController+LxTabBadgePoint.m in Sources */,
+				B6350E531C0606450052E507 /* UIViewController+LxTabBadgePoint.m in Sources */,
 				B634BCFA1C032656004B05D8 /* AppDelegate.m in Sources */,
 				B634BCF71C032656004B05D8 /* main.m in Sources */,
 			);

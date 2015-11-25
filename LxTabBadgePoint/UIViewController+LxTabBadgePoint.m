@@ -42,12 +42,13 @@
 
 - (UIView *)tabBadgePointView
 {
-    id tabBadgePointView = objc_getAssociatedObject(self, @selector(tabBadgePointView));
+    UIView * tabBadgePointView = objc_getAssociatedObject(self, @selector(tabBadgePointView));
     
     if (tabBadgePointView == nil) {
         tabBadgePointView = self.defaultTabBadgePointView;
+        objc_setAssociatedObject(self, @selector(tabBadgePointView), tabBadgePointView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    
+        
     return tabBadgePointView;
 }
 
@@ -169,6 +170,8 @@
     defaultTabBadgePointView.layer.masksToBounds = YES;
     defaultTabBadgePointView.center = self.tabBadgePointViewCenter;
     [self.tabBarButton addSubview:defaultTabBadgePointView];
+    
+    defaultTabBadgePointView.hidden = YES;
     
     return defaultTabBadgePointView;
 }
