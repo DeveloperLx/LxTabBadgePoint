@@ -35,12 +35,12 @@
     UINavigationController * nc3 = [[UINavigationController alloc]initWithRootViewController:vc3];
     UINavigationController * nc4 = [[UINavigationController alloc]initWithRootViewController:vc4];    
     
-    UITabBarController * tbc = [[UITabBarController alloc]init];
-    tbc.viewControllers = @[nc1, nc2, nc3, nc4];
-    
     nc2.tabBadgePointView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"audio_pause"]];
     nc3.tabBadgePointView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"exclamation"]];
     nc4.tabBadgePointView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"fans_each_other"]];
+    
+    UITabBarController * tbc = [[UITabBarController alloc]init];
+    tbc.viewControllers = @[nc1, nc2, nc3, nc4];    
     
     self.window.rootViewController = tbc;
     [self.window makeKeyAndVisible];

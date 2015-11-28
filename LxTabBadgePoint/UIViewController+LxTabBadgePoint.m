@@ -15,6 +15,11 @@
 
 - (void)setShowTabBadgePoint:(BOOL)showTabBadgePoint
 {
+    if (showTabBadgePoint && self.tabBadgePointView.superview == nil) {
+        self.tabBadgePointView.center = self.tabBadgePointViewCenter;
+        [self.tabBarButton addSubview:self.tabBadgePointView];
+    }
+    
     self.tabBadgePointView.hidden = showTabBadgePoint == NO;
 }
 
@@ -25,17 +30,9 @@
 
 - (void)setTabBadgePointView:(UIView *)tabBadgePointView
 {
-    if (self.embedInTabBarController == NO) {
-        NSLog(@"LxTabBadgePoint：This viewController not embed in tabBarController");
-        return;
-    }
-    
     if (tabBadgePointView.superview) {
         [tabBadgePointView removeFromSuperview];
     }
-    
-    tabBadgePointView.center = self.tabBadgePointViewCenter;
-    [self.tabBarButton addSubview:tabBadgePointView];
     
     tabBadgePointView.hidden = YES;
     
@@ -163,15 +160,13 @@
 
 - (UIView *)defaultTabBadgePointView
 {
-    CGFloat const defaultTabBadgePointViewRadius = 4;
+    CGFloat const defaultTabBadgePointViewRadius = 4.5;
     
     CGRect defaultTabBadgePointViewFrame = (CGRect){CGPointZero, CGSizeMake(defaultTabBadgePointViewRadius * 2, defaultTabBadgePointViewRadius * 2)};
     UIView * defaultTabBadgePointView = [[UIView alloc]initWithFrame:defaultTabBadgePointViewFrame];
     defaultTabBadgePointView.backgroundColor = [UIColor redColor];
     defaultTabBadgePointView.layer.cornerRadius = defaultTabBadgePointViewRadius;
     defaultTabBadgePointView.layer.masksToBounds = YES;
-    defaultTabBadgePointView.center = self.tabBadgePointViewCenter;
-    [self.tabBarButton addSubview:defaultTabBadgePointView];
     
     defaultTabBadgePointView.hidden = YES;
     

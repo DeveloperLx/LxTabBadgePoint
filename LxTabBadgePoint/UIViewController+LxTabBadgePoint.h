@@ -9,7 +9,7 @@
 /**
  *  @author DeveloperLx, 15-11-24 12:11:27
  *
- *  @TODO: Resolve can't set tabBadgePointView to nil.
+ *  @TODO: Cannot set tabBadgePointView to nil indeed, change it if possible.
  *
  */
 
