@@ -37,6 +37,8 @@
     tabBadgePointView.center = self.tabBadgePointViewCenter;
     [self.tabBarButton addSubview:tabBadgePointView];
     
+    tabBadgePointView.hidden = YES;
+    
     objc_setAssociatedObject(self, @selector(tabBadgePointView), tabBadgePointView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
