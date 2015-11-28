@@ -26,7 +26,7 @@
 - (void)setTabBadgePointView:(UIView *)tabBadgePointView
 {
     if (self.embedInTabBarController == NO) {
-        NSLog(@"LxTabBadgePoint：该viewController未嵌套在tabBarController中");
+        NSLog(@"LxTabBadgePoint：This viewController not embed in tabBarController");
         return;
     }
     
@@ -96,7 +96,7 @@
 - (NSInteger)tabIndex
 {
     if (self.embedInTabBarController == NO) {
-        NSLog(@"LxTabBadgePoint：该viewController未嵌套在tabBarController中");
+        NSLog(@"LxTabBadgePoint：This viewController not embed in tabBarController");
         return NSNotFound;
     }
     
@@ -108,7 +108,7 @@
 - (UIView *)tabBarButton
 {
     if (self.embedInTabBarController == NO) {
-        NSLog(@"LxTabBadgePoint：该viewController未嵌套在tabBarController中");
+        NSLog(@"LxTabBadgePoint：This viewController not embed in tabBarController");
         return nil;
     }
     
@@ -142,7 +142,7 @@
         return tabBarButtonArray[tabIndex];
     }
     else {
-        NSLog(@"LxTabBadgePoint：找不到对应的tabBarButton ！！！");
+        NSLog(@"LxTabBadgePoint：Not found corresponding tabBarButton ！！！");
         return nil;
     }
 }
