@@ -4,6 +4,9 @@
 ### Installation
     You only need drag UIViewController+LxTabBadgePoint.h and UIViewController+LxTabBadgePoint.m to your project.
 
+### CocoaPods
+    pod 'LxTabBadgePoint', '~> 1.0.0'
+
 ### Support
     Minimum support iOS version: iOS 6.0
 
