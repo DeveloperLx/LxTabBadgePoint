@@ -117,11 +117,11 @@
         
         tabBarButtonArray = [[NSMutableArray alloc]init];
         
-        for (id subViews in self.tabBarController.tabBar.subviews) {
+        for (id subView in self.tabBarController.tabBar.subviews) {
             
-            if ([NSStringFromClass([subViews class]) hasPrefix:@"UITabBarButton"]) {
+            if ([NSStringFromClass([subView class]) hasPrefix:@"UITabBarButton"]) {
                 
-                [tabBarButtonArray addObject:subViews];
+                [tabBarButtonArray addObject:subView];
             }
         }
         
