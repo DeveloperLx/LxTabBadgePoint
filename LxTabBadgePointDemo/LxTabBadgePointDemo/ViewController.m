@@ -22,8 +22,8 @@
     handleTabPointButton.showsTouchWhenHighlighted = YES;
     handleTabPointButton.titleLabel.font = [UIFont systemFontOfSize:20];
     handleTabPointButton.backgroundColor = [UIColor whiteColor];
-    [handleTabPointButton setTitle:@"显示红点" forState:UIControlStateNormal];
-    [handleTabPointButton setTitle:@"隐藏红点" forState:UIControlStateSelected];
+    [handleTabPointButton setTitle:@"show badge view" forState:UIControlStateNormal];
+    [handleTabPointButton setTitle:@"hide badge view" forState:UIControlStateSelected];
     [handleTabPointButton setTitleColor:self.view.backgroundColor forState:UIControlStateNormal];
     [handleTabPointButton addTarget:self action:@selector(handleTabPointButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:handleTabPointButton];

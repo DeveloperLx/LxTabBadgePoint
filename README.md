@@ -28,4 +28,4 @@
 ```
 
 ### License
-LxTabBadgePoint is available under the MIT License. See the LICENSE file for more info.
+    LxTabBadgePoint is available under the MIT License. See the LICENSE file for more info.
