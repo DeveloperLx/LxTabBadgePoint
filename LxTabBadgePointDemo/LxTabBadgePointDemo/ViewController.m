@@ -55,7 +55,7 @@
                                     toItem:nil
                                  attribute:NSLayoutAttributeWidth
                                 multiplier:1
-                                  constant:120];
+                                  constant:180];
     
     NSLayoutConstraint * handleTabPointButtonHeightConstraint =
     [NSLayoutConstraint constraintWithItem:handleTabPointButton
